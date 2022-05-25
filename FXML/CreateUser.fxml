@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="internships.management.system.Controllers.CreateUserFXMLController">
+   <children>
+      <Text layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create User" textAlignment="CENTER" wrappingWidth="1280.0">
+         <font>
+            <Font name="Sitka Small" size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="598.0" layoutY="519.0" mnemonicParsing="false" onAction="#CreateUser" style="-fx-background-color: red;" text="Save">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="565.0" layoutY="572.0" mnemonicParsing="false" onAction="#MainMenu" style="-fx-background-color: #73c1e6;" text="Main Menu">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="username" layoutX="500.0" layoutY="263.0" promptText="Username">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="mail" layoutX="499.0" layoutY="306.0" promptText="E-mail">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="password" layoutX="500.0" layoutY="348.0" promptText="Password">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </TextField>
+      <RadioButton layoutX="509.0" layoutY="390.0" mnemonicParsing="false" selected="true" text="Student">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="type" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="644.0" layoutY="389.0" mnemonicParsing="false" text="Company" toggleGroup="$type">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="512.0" layoutY="431.0" mnemonicParsing="false" text="Dean" toggleGroup="$type">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="645.0" layoutY="431.0" mnemonicParsing="false" text="Professor" toggleGroup="$type">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </RadioButton>
+      <Text fx:id="warning" fill="RED" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="1280.0">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

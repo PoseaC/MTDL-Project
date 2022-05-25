@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="internships.management.system.Controllers.MainMenuFXMLController">
+   <children>
+      <Text fx:id="Title" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main Menu" textAlignment="CENTER" wrappingWidth="1280.0">
+         <font>
+            <Font name="Sitka Small" size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="545.0" layoutY="287.0" mnemonicParsing="false" onAction="#Sign" style="-fx-background-color: #73c1e6;" text="Sign Conventions">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="575.0" layoutY="341.0" mnemonicParsing="false" onAction="#InternshipsStudent" style="-fx-background-color: #73c1e6;" text="Internships">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="542.0" layoutY="395.0" mnemonicParsing="false" onAction="#SearchInternship" style="-fx-background-color: #73c1e6;" text="Search Internship">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="595.0" layoutY="451.0" mnemonicParsing="false" onAction="#Profile" style="-fx-background-color: #73c1e6;" text="Profile">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="588.0" layoutY="599.0" mnemonicParsing="false" onAction="#LogOut" style="-fx-background-color: red;" text="Log Out">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="594.0" layoutY="117.0" prefHeight="44.0" prefWidth="104.0" text="Student">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="134.0" fitWidth="135.0" layoutX="570.0" layoutY="151.0">
+         <image>
+            <Image url="@../../../../Downloads/34190024.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

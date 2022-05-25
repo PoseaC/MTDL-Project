@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="internships.management.system.Controllers.ProfileCompanyFXMLController">
+   <children>
+      <Text layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Profile" textAlignment="CENTER" wrappingWidth="1280.0">
+         <font>
+            <Font name="Sitka Small" size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="598.0" layoutY="519.0" mnemonicParsing="false" onAction="#UpdateProfile" style="-fx-background-color: red;" text="Save">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="565.0" layoutY="572.0" mnemonicParsing="false" onAction="#MainMenu" style="-fx-background-color: #73c1e6;" text="Main Menu">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </Button>
+      <Text fx:id="warning" fill="RED" layoutX="2.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="1280.0">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="name" layoutX="508.0" layoutY="139.0" promptText="Username">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="mail" layoutX="506.0" layoutY="180.0" promptText="Mail">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="description" layoutX="506.0" layoutY="224.0" prefHeight="281.0" prefWidth="278.0" promptText="Description">
+         <font>
+            <Font name="Sitka Small" size="20.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>
